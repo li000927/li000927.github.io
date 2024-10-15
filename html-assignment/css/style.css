@@ -1,0 +1,43 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: coral;
+}
+.site-title {
+    color: #f6f326;
+}
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(odd) {
+    background-color: #58cd31;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    background-color: #19b79a;
+    border: 1px solid #1d373b;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #0b0a0a;
+}
+
+a:hover, a:focus {
+    background-color: #d3d3d3;
+    border-color: #999;
+    color: #333;
+}
