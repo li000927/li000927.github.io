@@ -1,0 +1,144 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #a2d6d6;
+    color: #333;
+    line-height: 1.3;
+}
+/* Paragraph text styling */
+p{
+    font-size: small;
+}
+
+/* Styles for the banner container */
+.banner {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Banner image styling */
+.banner img {
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Banner title styling */
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    bottom: 13rem;
+    margin: 0;
+}
+/* container styles */
+.container {
+    padding: 0rem;
+    background-color: #c2dedc;
+    margin:auto;
+    width: 800px;
+
+}
+.part2{
+    padding: 0rem 1rem 1rem 2rem
+}
+
+/* Navigation bar styles */
+nav ul {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+nav li {
+    margin: 10px 10px;
+    text-align: center;
+    border-right:1px solid black;
+    width: 200%;
+
+}
+/* Remove border for last navigation item */
+.nav-links li:last-child{
+    border: 0;
+    }
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #4caf50;
+    border-bottom: 2px solid #4caf50;
+}
+
+/* infomation section */
+.starfish-image{
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 200;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+/* form section */
+form label {
+    margin: 10px 0 5px;
+}
+form{
+    border: 1px solid #3c3c3c; 
+    padding: 20px 30px; 
+  margin-bottom: 5px;
+    width: 100%;
+    max-width: 850px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Input and textarea styles */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #ffffff; 
+}
+/* button */
+.contact-form button[type="submit"] {
+
+    color: #000000;
+    padding: 10px 20px;
+    background-color: #c2dedc;
+    border: 1px solid black
+}
+.contact-form button[type="submit"]:hover {
+    background-color: #bbbbbb; 
+}
+/* Footer styling */
+footer{
+    text-align: right;
+}
