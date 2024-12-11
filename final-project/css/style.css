@@ -10,7 +10,7 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 900;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -18,19 +18,23 @@ h1 {
 
 h2 {
     font-size: 3rem; 
-    font-weight: bold; 
+    font-weight:bolder; 
     margin-bottom: 20px; 
+    margin-top: 20px;
     color: #222; 
     padding: 0;
 }
 
 h3 {
     font-size: 2rem;
-    font-weight: bold;
-
+    font-weight: bolder;
     margin-bottom: 20px;
 }
+p{
+    font-size: 1.2rem;
+    line-height: 1.5;
 
+}
 .logo {
     background-color: #c78c06;
     margin: 0 auto;
@@ -41,7 +45,7 @@ h3 {
     display: inline-block;
     display: flex;
     justify-content: center;
-    padding: 1.5em;
+    padding: 20px;
     text-decoration: none;
     color: #c78c06;
 }
@@ -51,8 +55,9 @@ nav a:hover {
     color: #222;
     display: flex;
     justify-content: center;
-    width: 86%;
+    width: 705px;
     margin: 0 auto;
+    width: 705px;
 }
 
 .container {
@@ -60,8 +65,9 @@ nav a:hover {
 }
 
 .header-form {
-    padding: 1.5em;
+    padding: 20px;
     width: 100%;
+    display: flex;
 }
 
 .header_form_input {
@@ -69,11 +75,15 @@ nav a:hover {
     width: 90%;
 }
 
-.button {
+.search-button {
     color: #c78c06;
     border: #c78c06 solid 1px;
     background-color: #222;
     height: 2rem;
+    width: 2rem;
+}
+.header-form button i {
+    font-size: 1.2rem;
 }
 
 .banner-container{
@@ -204,7 +214,7 @@ p {
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 200px;
+    height: 300px;
 }
 
 .vision-content {
@@ -324,15 +334,22 @@ textarea {
     box-sizing: border-box; 
 }
 
-.form_btn {
+.form-btn {
     background-color: #000000; 
     color:rgb(244, 153, 16); 
     border: none;
-    padding: 5px 10px; 
-    font-size: 1rem; 
+    padding: 10px 15px; 
+    font-size: 1.5rem; 
     border-radius: 4px; 
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
 }
 
 .form_btn:hover {
@@ -342,4 +359,41 @@ textarea {
 
 .hours h3{
     padding-top: 30px;
+}
+
+table {
+    width: 100%;
+    border: #000000 1px solid;
+    margin-bottom: 20px;  
+}
+th{
+    border: #000000 1px solid;
+    padding: 10px;
+    height: 60px;
+    background-color: #ffe6ac;
+    text-align: center; /* 水平居中 */
+    vertical-align: middle;
+}
+td{
+    border: #000000 1px solid;
+    padding: 10px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+/* footer section styles */
+footer {
+    background-color: #222;
+    color:#c78c06;
+    padding: 20px 20px;
+    text-align: left;
+}
+.footter a{
+    text-decoration: underline; 
+    color: #c78c06;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 760px) {
+   
 }
