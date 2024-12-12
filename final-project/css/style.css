@@ -1,5 +1,7 @@
+/* body default setting */
 * {
-    box-sizing: border-box;
+    max-width: 1200px; 
+    box-sizing: border-box; 
 }
 font {
     font-family: 'Open Sans';
@@ -33,8 +35,8 @@ h3 {
 p{
     font-size: 1.2rem;
     line-height: 1.5;
-
 }
+/* header section styles */
 .logo {
     background-color: #c78c06;
     margin: 0 auto;
@@ -49,7 +51,7 @@ p{
     text-decoration: none;
     color: #c78c06;
 }
-
+/* nav hover styles */
 nav a:hover {
     background-color: #c78c06;
     color: #222;
@@ -59,11 +61,7 @@ nav a:hover {
     margin: 0 auto;
     width: 705px;
 }
-
-.container {
-    margin: 0 auto;
-}
-
+/* header form styles */
 .header-form {
     padding: 20px;
     width: 100%;
@@ -82,10 +80,12 @@ nav a:hover {
     height: 2rem;
     width: 2rem;
 }
+/* icon size changing */
 .header-form button i {
     font-size: 1.2rem;
 }
 
+/* banner part styles */
 .banner-container{
     padding: 20px;
 }
@@ -101,9 +101,7 @@ nav a:hover {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-
 }
-
 
 .banner {
     background-image: url(../images/main-banner.jpg);
@@ -115,10 +113,9 @@ nav a:hover {
     flex-direction: column;
     text-align: left;
     color: white;
-
-
 }
 
+/* banner button and hover styles */
 .banner button {
     background-color: #c78c06;
     color: black;
@@ -137,10 +134,7 @@ nav a:hover {
     font-size: 2rem;
 }
 
-p {
-  font-size: 1rem;
-}
-
+/* about section styles */
 .About {
     background-color: #ffe6ac;
     color: black;
@@ -158,13 +152,12 @@ p {
     width: 100%;
     margin-bottom: 20px;
 }
-
+/* add padding for about p */
 .About p{
     padding-top: 10px;
 }
 
-/* servics*/
-
+/* services section styles */
 .services {
     background-color: white;
     color: black;
@@ -202,8 +195,7 @@ p {
     font-size: 2rem;
 }
 
-
-/* our vision sction */
+/* our vision sction styles */
 .vision {
     position: relative;
     background-image: url(../images/vision.jpg);
@@ -221,11 +213,12 @@ p {
     padding-right: 30px;
 }
 
+/* vision button and hover styles */
 .vision-content button { 
     background-color: #21233f;
     color: white;
     border: 1px solid rgb(244, 153, 16);
-    padding: 25px 35px;
+    padding: 15px 25px;
     font-size: 2rem;
     align-items: center;
     gap: 10px;
@@ -243,10 +236,6 @@ p {
 }
 
 /* team section styles */
-/* .team {
-    padding: 20px 20px;
-    background-color: #fff;
-} */
 .team-container {
     padding: 20px 20px;
     background-color: #fff;
@@ -257,22 +246,12 @@ p {
     justify-content: left;
 }
 
-/* .team div {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-} */
 .team-container div {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 
-/* .team img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-} */
 .team-container img {
     width: 100%;
     max-width: 900px;
@@ -285,7 +264,7 @@ p {
     padding: 20px;
     text-align: left;
 }
-
+/* team text adjust */
 .team-content h3{
     font-size: 1.8rem;
     font-weight: bold;
@@ -300,7 +279,7 @@ p {
     margin-bottom: 10px;
 }
 
-
+/* add the cut-off underline */
 .team-content h4::after{
     content: "";
     display: block;
@@ -310,6 +289,7 @@ p {
     margin-top: 10px;
 }
 
+/* add color */
 .team-content p{
     font-size: 1rem;
     line-height: 1.6;
@@ -369,11 +349,11 @@ label {
     background-color: #222;
     color: #fff; 
 }
-
+/* hours part styles */
 .hours h3{
     padding-top: 30px;
 }
-
+/* table styles */
 table {
     width: 100%;
     border: #000000 1px solid;
@@ -406,9 +386,13 @@ footer {
     color: #c78c06;
 }
 
-/* Responsive Design */
-@media screen and (min-width: 760px) {
+/* ================================
+   Responsive Design
+================================ */
 
+/* Medium Devices (Tablets: 760px and above) */
+@media screen and (min-width: 760px) {
+    /* header */
     .logo {
         padding-left: 50px;
         background-color: #222;
@@ -434,7 +418,7 @@ footer {
         margin: 0 auto;
         width: auto;
     }
-
+    /* banner section*/
     .banner-content {
         content: '';
         position: relative;
@@ -447,7 +431,7 @@ footer {
         justify-content: center;
         margin: 0 auto;
     }
-
+    /* about section */
     .About{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -455,13 +439,14 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
     }
+    /* turn off padding */
      .About h2{
         padding:0;
      }
      
-
+    /* services section */
     .services-container {
-        display: grid; 
+        display: grid; /* Enable CSS Grid */
         grid-template-columns: repeat(6, 1fr); 
         grid-template-rows: 1fr 1fr; 
         grid-template-areas:
@@ -483,6 +468,8 @@ footer {
     .services-container  .services:nth-child(5) {
         grid-area: five;
     }
+
+    /* add padding for each section */
     .services{
         padding: 5px;
     }
@@ -499,8 +486,9 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
     }
+    /* team section */
     .team-container {
-        display: grid;
+        display: grid;/* Enable CSS Grid */
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -523,8 +511,9 @@ footer {
         padding-left: 100px;
         padding-right: 100px;
     }
+    /* contact section */
     .contact{
-        display: grid;
+        display: grid;/* Enable CSS Grid */
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr; 
         grid-template-areas:
@@ -541,6 +530,7 @@ footer {
     .contact .card2:nth-child(2) {
         grid-area: three;
     }
+    /* footer part */
     .footer{
         padding-left: 100px;
 
