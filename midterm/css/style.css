@@ -116,29 +116,29 @@ form{
     margin-left: auto;
     margin-right: auto;
 }
-/* Input and textarea styles */
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    background-color: #ffffff; 
+.contact-form {
+    max-width: 600px; /* 限制表单宽度 */
+    margin: 0 auto; /* 居中对齐 */
 }
-/* button */
-.contact-form button[type="submit"] {
 
-    color: #000000;
-    padding: 10px 20px;
-    background-color: #c2dedc;
-    border: 1px solid black
+.contact-form label {
+    display: block; /* 独占一行 */
+    font-size: 1rem;
+    margin-bottom: 5px; /* 标签与输入框间距 */
+    color: #222;
 }
-.contact-form button[type="submit"]:hover {
-    background-color: #bbbbbb; 
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* 输入框占满父容器 */
+    padding: 10px; /* 输入框内边距 */
+    font-size: 1rem; /* 输入框字体大小 */
+    border: 1px solid #ccc; /* 灰色边框 */
+    border-radius: 4px; /* 圆角 */
+    margin-bottom: 20px; /* 输入框之间的间距 */
 }
-/* Footer styling */
-footer{
-    text-align: right;
+
+.contact-form textarea {
+    height: 150px; /* 文本框高度 */
+    resize: none; /* 禁用手动调整大小 */
 }
